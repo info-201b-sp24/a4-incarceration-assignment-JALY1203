@@ -7,6 +7,8 @@ output: html_document
 
 An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
 
+For as long as the United States has been around, racism has existed, and in the past century, one one of the most prominent ways that racism has manifested has been through the incarceration system.
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
@@ -46,7 +48,7 @@ When we say "clear" or "human readable" titles and labels, that means that you s
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
 ### Variable Comparison Chart
