@@ -5,9 +5,7 @@ output: html_document
 
 ### Introduction
 
-An introduction of the problem domain and a description of the variable(s) you are choosing to analyze (and why!)
-
-For as long as the United States has been around, racism has existed, and in the past century, one one of the most prominent ways that racism has manifested has been through the incarceration system.
+For as long as the United States has been around, racism has existed, and in the past century, one one of the most prominent ways that racism has manifested has been through the incarceration system. I decided to analyze prison population per county/state. Some specific variables that I decided to analyze were incarcerations based on race, state, etc. The reason I want to look at these variables is because they in my opinion provide the most insight in terms of both state values, as well as overall rates of incarceration based on race.
 
 ### Summary Information
 
@@ -24,13 +22,26 @@ Feel free to calculate and report values that you find relevant. Again, remember
 ### The Dataset
 
 Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
 
+- The data was collected by the Vera Institute.
+
+How was the data collected or generated?  
+- 
+
+Why was the data collected?  
+- 
+
+How many observations (rows) are in your data?  
+- 
+
+How many features (columns) are in the data?  
+- 
+
+What, if any, ethical questions or questions of power do you need to consider when working with this data?  
+- 
+
+What are possible limitations or problems with this data?   (at least 200 words)
+- 
 
 ### Trends Over Time Chart
 
