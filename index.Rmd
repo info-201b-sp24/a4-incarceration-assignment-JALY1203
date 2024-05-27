@@ -5,13 +5,16 @@ output: html_document
 
 ### Introduction
 
-For as long as the United States has been around, racism has existed, and in the past century, one one of the most prominent ways that racism has manifested has been through the incarceration system. I decided to analyze prison population per county/state. Some specific variables that I decided to analyze were incarcerations based on race, state, etc. The reason I want to look at these variables is because they in my opinion provide the most insight in terms of both state values, as well as overall rates of incarceration based on race.
+For as long as the United States has been around, racism has existed, and in the past century, one one of the most prominent ways that racism has manifested has been through the incarceration system. I decided to analyze prison and jail populations per county/state. Some specific variables that I decided to analyze were incarcerations based on race, state, etc. The reason I want to look at these variables is because they in my opinion provide the most insight in terms of both state values, as well as overall rates of incarceration based on race.
 
 ### Summary Information
 
+```{r echo = FALSE, message = FALSE, code = readLines("summary.R")}
+```
+
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-These will likely be calculated using your DPLYR skills, answering questions such as: 
+These will likely be calculated using your DPLYR skills, answering questions such as:
 
 - What is the average value of my variable across all the counties (in the current year)?
 - Where is my variable the highest / lowest?
@@ -26,22 +29,30 @@ Who collected the data?
 - The data was collected by the Vera Institute.
 
 How was the data collected or generated?  
-- 
+
+- Collected from various sources (BJS, which includes data from COJ, ASJ, etc.) and aggregated into a CSV.
 
 Why was the data collected?  
-- 
+
+- The data was collected in order to better understand the various incarcerations systems in place in the United States so that they could more effectively understand the effects of these systems and how to deal with them.
 
 How many observations (rows) are in your data?  
-- 
+
+- 153811
 
 How many features (columns) are in the data?  
-- 
 
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-- 
+- 36 (Prison)
+- 28 (Jail)
+
+What, if any, ethical questions or questions of power do you need to consider when working with this data? 
+
+- One question that I have is how some categorical values like race are determined when it comes to mixed ethnicity, or similar?
 
 What are possible limitations or problems with this data?   (at least 200 words)
-- 
+
+- One of the primary issues with all the data sets that are included in the Vera Institute study is that there are a lot of Not Applicable or missing values in the data set. While this is workable, as it is possible to simply just remove the missing/not applicable data, it does detract from the completeness of any finding that we make from the data. This can be noted in the case where we want to calculate an average or median from the values, but there is a large hole in the data set from a specific set of years, which when removed could seriously skew the results in a particular direction. If there are important years to consider in history, but those results are removed from the data set, this will serve as a huge hindrance. Not only that, but a lot of the information on the data set and the way that they are formatted are more on the dated side, especially when you consider that only male and female is accounted for, which is a problem since in today’s society, the concept of binary gender has largely been done away with and we should be considering everyone’s unique identity.
+
 
 ### Trends Over Time Chart
 
@@ -72,6 +83,9 @@ The second chart that you will create and include will show how two different (c
 - The chart needs a clear title 
 - If you choose to add a color encoding (not required), you need a legend for your different color and a clear legend title
 
+```{r, echo = FALSE, code = readLines("chart2_example.R")}
+```
+
 ### Map
 
 Include a chart. Make sure to describe why you included the chart, and what patterns emerged
@@ -81,4 +95,7 @@ The last chart that you will create and include will show how a variable is dist
 - Your map needs a title
 - Your color scale needs a legend with a clear label
 - Use a map based coordinate system to set the aspect ratio of your map
+
+```{r, echo = FALSE, code = readLines("map_example.R")}
+```
 
