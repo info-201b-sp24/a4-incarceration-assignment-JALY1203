@@ -17,7 +17,7 @@ summary_info$state_highest_pop_now <- pris_pop %>%
 summary_info$state_lowest_pop_now <- pris_pop %>% 
   filter(year == 2016) %>%
   slice_min(total_prison_pop, with_ties = FALSE) %>%
-  select(state)
+  select(state, year)
 
 # state with highest black prisoner ratio
 
