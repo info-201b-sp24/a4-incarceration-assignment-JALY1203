@@ -9,6 +9,9 @@ For as long as the United States has been around, racism has existed, and in the
 
 ### Summary Information
 
+```{r echo = FALSE, message = FALSE, code = readLines("summary.R")}
+```
+
 While going through the data, some of the things that I found included the most recently recorded highest prison population which was in `r summary_info $state_highest_pop_now` (California). While the lowest most recent recorded prison population was in `r summary_info $state_lowest_pop_now` (Colorado). The highest ratio of black prisoners to total prisoners was in `r summary_info $state_highest_black_prison_ratio` (Louisiana). The highest amount of POCs in prison was `r summary_info $highest_poc_prison_pop`. And the year with the most prisoners incarcerated was in `r summary_info $year_highest_prisoners`.
 
 
@@ -33,7 +36,6 @@ How many observations (rows) are in your data?
 How many features (columns) are in the data?  
 
 - 36 (Prison)
-- 28 (Jail)
 
 What, if any, ethical questions or questions of power do you need to consider when working with this data? 
 
