@@ -9,18 +9,8 @@ For as long as the United States has been around, racism has existed, and in the
 
 ### Summary Information
 
-```{r echo = FALSE, message = FALSE, code = readLines("summary.R")}
-```
+While going through the data, some of the things that I found included the most recently recorded highest prison population which was in `r summary_info $state_highest_pop_now` (California). While the lowest most recent recorded prison population was in `r summary_info $state_lowest_pop_now` (Colorado). The highest ratio of black prisoners to total prisoners was in `r summary_info $state_highest_black_prison_ratio` (Louisiana). The highest amount of POCs in prison was `r summary_info $highest_poc_prison_pop`. And the year with the most prisoners incarcerated was in `r summary_info $year_highest_prisoners`.
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
-
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average value of my variable across all the counties (in the current year)?
-- Where is my variable the highest / lowest?
-- How much has my variable change over the last N years?
-
-Feel free to calculate and report values that you find relevant. Again, remember that the purpose is to think about how these measure of incarceration vary by race.
 
 ### The Dataset
 

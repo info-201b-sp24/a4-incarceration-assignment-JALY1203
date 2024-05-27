@@ -366,19 +366,31 @@ well as overall rates of incarceration based on race.</p>
 </div>
 <div id="summary-information" class="section level3">
 <h3>Summary Information</h3>
-<p>Write a summary paragraph of findings that includes the 5 values
-calculated from your summary information R script</p>
-<p>These will likely be calculated using your DPLYR skills, answering
-questions such as:</p>
-<ul>
-<li>What is the average value of my variable across all the counties (in
-the current year)?</li>
-<li>Where is my variable the highest / lowest?</li>
-<li>How much has my variable change over the last N years?</li>
-</ul>
-<p>Feel free to calculate and report values that you find relevant.
-Again, remember that the purpose is to think about how these measure of
-incarceration vary by race.</p>
+<pre><code>## $state_highest_pop_now
+##   state year
+## 1    CA 2016
+## 
+## $state_lowest_pop_now
+##   state year
+## 1    CO 2016
+## 
+## $state_highest_black_prison_ratio
+## [1] &quot;LA&quot;
+## 
+## $highest_poc_prison_pop
+##   highest_poc_prison_pop
+## 1                  25074
+## 
+## $year_highest_prisoners
+##   year state
+## 1 2007    CA</code></pre>
+<p>While going through the data, some of the things that I found
+included the most recently recorded highest prison population which was
+in CA, 2016 (California). While the lowest most recent recorded prison
+population was in CO, 2016 (Colorado). The highest ratio of black
+prisoners to total prisoners was in LA (Louisiana). The highest amount
+of POCs in prison was 25074. And the year with the most prisoners
+incarcerated was in 2007, CA.</p>
 </div>
 <div id="the-dataset" class="section level3">
 <h3>The Dataset</h3>
