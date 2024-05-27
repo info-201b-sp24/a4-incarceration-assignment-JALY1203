@@ -1,27 +1,27 @@
 library(tidyverse)
 
 # load data
-pris_pop <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true", stringsAsFactors = FALSE)
+prison_pop <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true", stringsAsFactors = FALSE)
 
 summary_info <- list()
 
 # state with highest prison population in the latest available year
 
-summary_info$state_highest_pop_now <- pris_pop %>% 
+summary_info$state_highest_pop_now <- prison_pop %>% 
   filter(year == 2016) %>%
   filter(total_prison_pop == max(total_prison_pop, na.rm = TRUE)) %>%
   select(state, year)
 
 # state with lowest prison population in the latest available year
 
-summary_info$state_lowest_pop_now <- pris_pop %>% 
+summary_info$state_lowest_pop_now <- prison_pop %>% 
   filter(year == 2016) %>%
   slice_min(total_prison_pop, with_ties = FALSE) %>%
   select(state, year)
 
 # state with highest black prisoner ratio
 
-summary_info$state_highest_black_prison_ratio <- pris_pop %>%
+summary_info$state_highest_black_prison_ratio <- prison_pop %>%
   select(state, black_prison_pop, total_prison_pop) %>%
   group_by(state) %>%
   summarise(black_prison_pop = sum(black_prison_pop, na.rm = TRUE),
@@ -32,7 +32,7 @@ summary_info$state_highest_black_prison_ratio <- pris_pop %>%
 
 # highest POCs imprisoned
 
-summary_info$highest_poc_prison_pop <- pris_pop %>%
+summary_info$highest_poc_prison_pop <- prison_pop %>%
   summarize(
     highest_poc_prison_pop = max(
       aapi_prison_pop,
@@ -45,7 +45,7 @@ summary_info$highest_poc_prison_pop <- pris_pop %>%
 
 # year with highest amount of prisoners
 
-summary_info$year_highest_prisoners <- pris_pop %>%
+summary_info$year_highest_prisoners <- prison_pop %>%
   filter(total_prison_pop == max(total_prison_pop, na.rm = TRUE)) %>%
   select(year, state)
   
