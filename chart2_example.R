@@ -2,10 +2,12 @@ library(tidyverse)
 
 prison_pop <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true",stringsAsFactors = FALSE)
 
+# highest black population
 highest_black_prison_pop <- prison_pop %>%
   summarize(highest_black_prison_pop = max(black_prison_pop,na.rm = TRUE)) %>%
   select(highest_black_prison_pop)
 
+# highest white population
 highest_white_prison_pop <- prison_pop %>%
   summarize(highest_white_prison_pop = max(white_prison_pop, na.rm = TRUE)) %>%
   select(highest_white_prison_pop)
