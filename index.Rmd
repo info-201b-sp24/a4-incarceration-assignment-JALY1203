@@ -61,15 +61,9 @@ You can see in this graph how the proportion of black incarcerations in prison i
 To get more perspective from the previous graph, I am using this bar graph to show just how disproportionate the actual incarceration rates are. The highest amount of white people incarcerated in prison are shown on the right versus the highest amount of black people incarcerated on the left. This is throughout all history, the highest amount of each race being locked up. The injustice is quite clear.
 
 ### Map
-
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
-
-The last chart that you will create and include will show how a variable is distributed geographically. Again, think carefully about what such a comparison means and what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Your map needs a title
-- Your color scale needs a legend with a clear label
-- Use a map based coordinate system to set the aspect ratio of your map
-
-```{r, echo = FALSE, code = readLines("map_example.R")}
+```{r, echo = FALSE, warning = FALSE, message = FALSE, code = readLines("map_example.R")}
 ```
+
+This map shows the proportions of black prisoners to total prisoners in each states. You can see how in some states there are no statistics taken due to lack of recording. Otherwise, the main observation is that the east has a higher proportion compared to western states, this is even with high population states like Texas and California.
+
 
