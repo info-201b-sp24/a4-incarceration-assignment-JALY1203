@@ -48,5 +48,4 @@ summary_info$highest_poc_prison_pop <- pris_pop %>%
 summary_info$year_highest_prisoners <- pris_pop %>%
   filter(total_prison_pop == max(total_prison_pop, na.rm = TRUE)) %>%
   select(year, state)
-
   
