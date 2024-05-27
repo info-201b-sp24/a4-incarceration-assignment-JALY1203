@@ -2,6 +2,7 @@ library(tidyverse)
 
 prison_pop <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/blob/main/us-prison-pop.csv?raw=true",stringsAsFactors = FALSE)
 
+# create ratio between race and total population
 race_ratio <- prison_pop %>%
   filter(year < 2017) %>%
   group_by(year) %>%
